@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  min-height: 100vh;
+}
+header h1{
+  margin-top: 20px;
+  font-size: 50px;
+  width: 100%;
+  font-family:'Times New Roman', Times, serif;
+  color: blueviolet;
+}
+header h6{
+  font-size: 15px;
+  font-family:'Times New Roman', Times, serif;
+  color: blueviolet;
+}
+header{
+  text-align: center;
+}
+.descricao{
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: blueviolet;
+  width: 70%;
+}
+.descricao h2{
+  margin: 20px;
+}
+.secLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+form {
+  text-align: center;
+}
+
+.inputLink{
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 14px;
+  width: 400px;
+  box-sizing: border-box;
+}
+.inputNome{
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+button{
+  padding: 10px;
+  font-size: 14px;
+  background-color: green;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 1px;
+  border-color: rgb(255, 255, 255);
+}
+footer{
+  background-color: rgb(165, 139, 139);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

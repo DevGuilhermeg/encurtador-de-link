@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Encurta Links: Encurte Seus Links Aqui!
+  </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+<body>
+  <header>
+    <section class="secHeader">
+      <h1>
+        <a href="/">
+          Encurta Links
+        </a>
+      </h1>
+      <h6>
+        torne seus links memoráveis
+      </h6>
+    </section>
+  </header>
+  <section class="descricao">
+    <h2>
+      Descubra a praticidade do encurtamento de links conosco!<br> Transformamos URLs longas em pequenos links fáceis de<br> lembrar. Com análises de desempenho, customização e<br> segurança avançada, simplificamos sua presença online.<br> Experimente agora!
+    </h2>
+  </section>
+  <form action="/processar_link" method="post"> 
+    <section class="secLink">
+      <input class="inputLink" type="text" name="link" placeholder="Cole seu link aqui">
+      
+    </section>
+    <section class="secLink">
+      <input class="inputNome" type="text" name="nome" placeholder="Apelido (opcional)">
+    </section>
+    <button type="submit">
+      Encurtar
+    </button>
+    {% if visivel %}
+    <section class="secLink">      
+      <input class="inputLink" type="text" name="LinkEncurtado" id="LinkEncurtado" value="{{ valor }}" placeholder="Seu link aparecerá aqui!">
+    </section>
+    {% endif %}
+
+  </form>
+  
+  
+   
+  <script src="{{ url_for('static', filename='js/script.js') }}" async defer></script>
+  <footer>
+    <p>
+      &copy; 2023 Encurta Links. Todos os direitos reservados.
+    </p>
+  </footer>
+</body>
+  
+
+</html>
