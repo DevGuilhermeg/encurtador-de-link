@@ -31,7 +31,7 @@ def index():
 def processar():
     link = request.form['link']
     nome = request.form['nome']
-    valor = request.referrer.replace("processar_link", "") + nome
+    valor = request.referrer.split("processar_link")[0] + nome
 
     if not nome:
         nome = ''.join(random.choices(string.ascii_letters + string.digits, k=15))
