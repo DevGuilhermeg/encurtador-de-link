@@ -23,6 +23,8 @@ def obter_link(nome):
     link = Links.query.filter_by(nome=nome).first()
     return link.link if link else None
 
+
+# ROTA PARA O INDEX
 @app.route('/')
 def index():
     return render_template('index.html')
