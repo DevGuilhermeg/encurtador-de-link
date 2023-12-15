@@ -46,6 +46,7 @@ Este é um simples encurtador de links desenvolvido em Python usando o framework
 
 ### Observações:
 
+
 - Certifique-se de ter permissões adequadas para executar o aplicativo no ambiente local.
 - O banco de dados SQLite (`banco.db`) é utilizado para armazenar as informações dos links encurtados.
 
